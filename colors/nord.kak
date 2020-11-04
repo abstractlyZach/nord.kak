@@ -40,8 +40,8 @@ evaluate-commands %sh{
         face global PrimaryCursor      ${nord0},${nord6}+fg
         face global SecondaryCursor    ${nord0},${nord6}+fg
         # how do I change the current line background??
-        # face global MenuForeground     ${fg1},${bg3}+b
-        # face global MenuBackground     default,${bg2}
+        face global MenuForeground     ${nord2},${nord4}+i
+        face global MenuBackground     ${nord6},${nord1}+i
         face global StatusLine         ${nord4},${nord1}
         face global StatusLineMode     ${nord15}
         face global StatusLineInfo     ${nord6}+b
