@@ -6,6 +6,7 @@ evaluate-commands %sh{
     nord1="rgb:3b4252"
     nord2="rgb:434c5e"
     nord3="rgb:4c566a"
+    nord3_bright="rgb:616e88"
     nord4="rgb:d8dee9"
     nord5="rgb:e5e9f0"
     nord6="rgb:eceff4"
@@ -22,7 +23,7 @@ evaluate-commands %sh{
     echo "
         # Code highlighting
         face global string    ${nord14}
-        face global comment   ${nord3}
+        face global comment   ${nord3_bright}
         face global Default   ${nord6},${nord0}
         face global function  ${nord8}
         face global value     ${nord15}
