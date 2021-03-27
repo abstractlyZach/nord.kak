@@ -59,6 +59,10 @@ evaluate-commands %sh{
         face global LineNumberCursor   ${nord4},${nord2}+b
     "
 
+    # marks a soft-wrap in yellow
+    echo "face global LineNumbersWrapped ${nord13},${nord1}"
+    echo "face global WrapMarker         ${nord13}+f"
+
 
     # selected element in menus
     echo "face global MenuForeground   ${nord0},${nord8}+b"
@@ -79,9 +83,21 @@ evaluate-commands %sh{
     echo "face global StatusLineInfo   ${nord4}+b"
     # special values
     echo "face global StatusLineValue  ${nord8}+i"
-    echo "face global StatusCursor     ${nord0},${nord4}"
 
-    echo "face global Error            ${nord4},${nord11}"
+    echo "face global StatusCursor     ${nord0},${nord4}"
+    echo "face global Prompt           default"
+    echo "face global Whitespace       ${nord10},${nord1}+f"
+
+    echo "face global Error              ${nord4},${nord11}"
+
+    # general information, like Clippy
+    echo "face global Information        default,${nord1}"
+
+    # not really sure what this line does... 
+    echo "face global MatchingChar       blue,red+F"
+
+    # extra padding at the end of a buffer (file)
+    echo "face global BufferPadding      default,${nord3}"
 }
 
         # faces that I'm not sure about
@@ -99,10 +115,3 @@ evaluate-commands %sh{
         # face global bullet        ${b_red}
         # face global list          ${fg0}
 
-        # face global LineNumbersWrapped ${bg0}
-        # face global Information        ${bg0},${fg4}
-        # face global Prompt             default
-        # face global MatchingChar       default,${bg2}
-        # face global BufferPadding      ${bg0},${bg0}
-        # face global Whitespace         ${bg2}+f
-        # face global WrapMarker         ${bg2}+f
