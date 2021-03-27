@@ -9,4 +9,4 @@ plug "abstractlyZach/nord.kak" %{
 }
 ```
 ### Manual installation
-Add [colors/nord.kak](colors/nord.kak) into your $KAK_CONFIG/colors folder.
+Add [colors/nord.kak](colors/nord.kak) into your `$KAK_CONFIG/colors` folder.
