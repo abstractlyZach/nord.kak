@@ -34,14 +34,13 @@ evaluate-commands %sh{
         face global attribute ${nord12}
         face global meta      ${nord9}
 
-
         face global LineNumbers        ${nord8},${nord1}+b
         face global LineNumberCursor   ${nord4},${nord2}+b
         face global PrimaryCursor      ${nord0},${nord6}+fg
         face global SecondaryCursor    ${nord0},${nord6}+fg
-        # how do I change the current line background??
         face global MenuForeground     ${nord2},${nord4}+i
         face global MenuBackground     ${nord6},${nord1}+i
+        face global MenuInfo           ${nord5}+u
         face global StatusLine         ${nord4},${nord1}
         face global StatusLineMode     ${nord15}
         face global StatusLineInfo     ${nord6}+b
@@ -50,6 +49,7 @@ evaluate-commands %sh{
     "
 }
 
+        # faces that I'm not sure about
 
         # # Markup
         # face global title         ${b_green}+b
@@ -67,7 +67,6 @@ evaluate-commands %sh{
         # face global PrimarySelection   default,${bg2}+g
         # face global SecondarySelection default,${bg1}+g
         # face global LineNumbersWrapped ${bg0}
-        # face global MenuInfo           ${b_blue}
         # face global Information        ${bg0},${fg4}
         # face global Error              ${b_red},default+b
         # face global Prompt             default
