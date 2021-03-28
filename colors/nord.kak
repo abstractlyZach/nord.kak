@@ -88,30 +88,25 @@ evaluate-commands %sh{
     echo "face global Prompt           default"
     echo "face global Whitespace       ${nord10},${nord1}+f"
 
-    echo "face global Error              ${nord4},${nord11}"
-
-    # general information, like Clippy
-    echo "face global Information        default,${nord1}"
-
     # not really sure what this line does... 
     echo "face global MatchingChar       blue,red+F"
 
     # extra padding at the end of a buffer (file)
     echo "face global BufferPadding      default,${nord3}"
+
+    # general information, like Clippy
+    echo "face global Information        default,${nord1}"
+    echo "face global Error              ${nord4},${nord11}"
+
+    # Markup
+    echo "face global title         ${nord8},${nord1}+b"
+    echo "face global header        ${nord7},${nord1}+b"
+    echo "face global bold          default,default+ba"
+    echo "face global mono          ${nord10}"
+    echo "face global block         ${nord13}"
+    echo "face global Italic        default,default+ia"
+    echo "face global Underline     default,default+ufa"
+    echo "face global link          ${nord8}+u"
+    echo "face global bullet        ${nord12}"
+    echo "face global list          ${nord14}"
 }
-
-        # faces that I'm not sure about
-
-        # # Markup
-        # face global title         ${b_green}+b
-        # face global header        ${b_blue}+b
-        # face global bold          default,default+ba
-        # face global italic        default,default+ia
-        # face global underline     default,default+ufa
-        # face global strikethrough ${bg3}
-        # face global mono          ${fg2}
-        # face global block         ${fg3}
-        # face global link          ${b_aqua}+u
-        # face global bullet        ${b_red}
-        # face global list          ${fg0}
-
